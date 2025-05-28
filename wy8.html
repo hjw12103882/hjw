@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <!--标题-->
+    <header class="header">
+        <h1>萧奕嘉 Xiaoyijia</h1>
+        <p>扬州|信息工程学院|计算机网络应用</p>
+
+    </header>
+    <!--导航-->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><img src="img/1.jpg" class="face">萧奕嘉</div>
+            <button class="hbb" id="hbb">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <div class="nav-links">
+                <a href="#" class="nav-link">个人介绍</a>
+                <a href="#" class="nav-link">教育背景</a>
+                <a href="#" class="nav-link">兴趣爱好</a>
+                <a href="#" class="nav-link">旅游日记</a>
+            </div>
+        </div>
+        <script>
+            const hbb=document.getElementById('hbb');
+            const navlinks=document.querySelector('.nav-links');
+            hbb.addEventListener('click',()=>{
+                hbb.classList.toggle('active');
+                navlinks.classList.toggle('active');
+            })
+        </script>
+    </nav>
+    <!--内容-->
+    <main class="main-content">
+        <div class="primary-content">
+            <div class="content-card">
+                <h2>个人介绍</h2>
+                <p>自我介绍---我是一个正直向上的人，遇到挫折不会放弃，勇敢说“ 不！”</p>
+            </div>
+            <div class="content-card">
+                <h3>教育背景</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>初中</h4>
+                        <p>2013-2016年 帝国初中</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>高中</h4>
+                        <p>2016-2018年 嘻嘻嘻高校</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>大专</h4>
+                        <p>2018-2021年 啦啦啦大专</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-card">
+                <h3>喜欢的书</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>在小学特别喜欢的书</h4>
+                        <p>窗边有个小豆豆</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>在初中特别喜欢的书</h4>
+                        <p>哈利波特</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>在大学特别喜欢的书</h4>
+                        <p>云边有个小卖部</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="content-card">
+                <h3>旅游日记</h3>
+                <div class="timeline">
+                <div class="timeline-item">
+                    <h4>2024.5.20上海迪士尼</h4>
+                    <p><img src="img/shdsn.jpg"></p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2024.7.15山东日照</h4>
+                    <p><img src="img/rz.jpg"></p>
+                </div>
+            </div>
+        </div>
+        </div>
+<aside class="asiderbar">
+    <div class="content-card">
+        <h3>兴趣爱好</h3>
+        <ul>
+            <li>看偶像</li>
+            <li>唱歌</li>
+            <li>游戏</li>
+            <li>旅游</li>
+            <li>喜欢diy</li>
+        </ul>
+    </div>
+</aside>
+
+    </main>
+    <!--页脚-->
+    <footer>
+人的联系方式：12345678912
+    </footer>
+</body>
+
+</html>
